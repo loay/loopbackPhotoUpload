@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Photo Upload App</title>
+  </head>
+  <body>
+    <h3>Login</h3>
+    <table border=1 cellpadding=5 width="50%">
+ <tr>
+        <td>
+          <form action="/projects" method="post">
+            <input type="text" name="email" value="loaygl@gmail.com" placeholder="Email" style="width:400px;height:50px;"><br>
+            <input type="password" name="password" value="abc123" placeholder="Password" style="width:400px;height:50px;"><br>
+            <input type="submit" value="Login">
+          </form>
+        </td>
+      </tr>
+
+      <% if (loginFailed) { %>
+        <tr>
+          <td colspan=6>
+              <span style="color:red">Login failed, please try again</span>
+          </td>
+        </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
